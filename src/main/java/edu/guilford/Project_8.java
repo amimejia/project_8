@@ -33,13 +33,13 @@ public class Project_8 {
         Set<String> techSet = new HashSet<String>();
 
         try {
-            pathLocation = Paths.get(Project_8.class.getResource("/" + "Tech_paragraph.txt").toURI());
+            pathLocation = Paths.get(Project_8.class.getResource("/" + "Marx_essary.txt").toURI());
             // FileReader techReaderFile = new FileReader(pathLocation.toFile());
             BufferedReader second_readBuffer = new BufferedReader(new FileReader(pathLocation.toFile()));
 
             // Setting up the output file
-            PrintWriter techQueuePrint = new PrintWriter(new FileWriter("techqueue_print.txt"));
-            PrintWriter techQueuePolled = new PrintWriter(new FileWriter("techqueue_polled.txt"));
+            PrintWriter techQueuePrint = new PrintWriter(new FileWriter("marx_print.txt"));
+            PrintWriter techQueuePolled = new PrintWriter(new FileWriter("marx_polled.txt"));
 
             // while each line is read by the buffered reader, it will split the words by
             // the spaces, commas, and periods using the "\\W+"
